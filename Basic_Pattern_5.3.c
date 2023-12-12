@@ -6,17 +6,17 @@ int main()
     for(i=a;i>=1;i--)
     {
         for(j=1;j<=a;j++)
+    {
+        if(j<=i)
         {
-            if(j<=i)
-            {
-                printf("%d",i);
-            }
-            else
-            {
-                printf("*");
-            }
+            printf("%d",i);
         }
-        printf("
+        else
+        {
+            printf("*");
+        }
+    }
+    printf("
 ");
     }
 }
